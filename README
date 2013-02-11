@@ -1,4 +1,4 @@
-ECAASU 2013 Website:
+ECAASU 2013 Website: http://www.ecaasu2013.org
 
 User Experience:
 The site UX is unorthodox in that the main site where all the information is presented is one massive page. Each "page" on this index page is actually a frame that is set to 100% width and height through CSS3. The user travels from frame to frame using the links on the fixed header bar on the dropdown menu. These links, instead of redirecting to alternate pages, call a travel function that causes the screen to scroll relatively rapidly to the target frame. 
