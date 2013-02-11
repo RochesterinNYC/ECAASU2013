@@ -1,0 +1,39 @@
+ECAASU 2013 Website:
+
+User Experience:
+The site UX is unorthodox in that the main site where all the information is presented is one massive page. Each "page" on this index page is actually a frame that is set to 100% width and height through CSS3. The user travels from frame to frame using the links on the fixed header bar on the dropdown menu. These links, instead of redirecting to alternate pages, call a travel function that causes the screen to scroll relatively rapidly to the target frame. 
+
+For example, the user types in ecaasu2013.org and sees the homeframe with the ECAASU 2013 logo, minimizable announcement bar, links to the four types of content areas, and the fixed header bar. The user wants to get some information on the workshops of the conference. The user then clicks on the workshops link on the drop down menu for "Program" on the header and the screen scrolls to the Workshops "page" which is actually a frame that emmulates a page.
+
+In terms of graphic design, the colored lines that are placed between frames imitates the subway lines of the NYC MTA (especially the colors) and the travel function hence seeks to imitate subway motion. Links on the announcement bar will also call the travel function. 
+
+On the header, the registration link, hotel registration link, and contact us link will all lead to actually separate pages.
+
+Javscript:
+Used for:
+- User registration validation
+- User hotel registration validation
+- Implementation of travel system through personally designed travel algorithm
+- Dynamic alteration of registration and hotel registration form to reflect user selections
+- Announcement Bar control
+- Restricting form submission without agreeing to Terms and Conditions
+- Date word to number conversion
+
+JQuery:
+- scrollTo function of Ariel Flesler's JQuery scroll plugin utilized for travel function
+
+PHP:
+- Work with Paypal API on IPNs (Instant Payment Notifications) to automatically update Registration and Hotel Registration database table entries on Paypal user payment
+- Site caching to improve load speeds
+- Email Contact Form used to direct user inquiries to the appropriate committee email addresses
+- Conference Registration portal and user data validation and entry
+- Hotel Registration portal and user data validation and entry
+- Security-checking to prevent SQL Injection
+
+SQL: 
+- User data entry 
+- Personal queries used to quickly update groups (through group_code manipulation and flagging)
+
+The reason there are so many seemingly random pages in this site implementation is that many are designed to be stand-alone pages that aren't accessible to users from the main site. We utilize these through direct links in email, facebook, and twitter blasts, so these pages aren't actually part of the typical user experience flow.
+
+Any questions, concerns, or critiques can be field to tech@ecaasu2013.org.
