@@ -1,0 +1,2901 @@
+missio/* Default CSS */
+/*------------------------------------* RESET *------------------------------------*/ 
+body,  div,  dl,  dt,  dd,  ul,  ol,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  form,  fieldset,  input,  textarea,  p,  blockquote,  th,  td  {
+	 margin:0;
+	 padding:0;
+}
+
+ table  {
+	 border-collapse:collapse;
+	 border-spacing:0;
+}
+
+ fieldset,  img  {
+	 border:0;
+}
+
+ address,  caption,  cite,  code,  dfn,  th,  var  {
+	 font-style:normal;
+	 font-weight:normal;
+}
+
+ caption,  th  {
+	 text-align:left;
+}
+
+ h1,  h2,  h3,  h4,  h5,  h6  {
+	 font-size:100%;
+	 font-weight:normal;
+}
+
+ q:before,  q:after  {
+	 content:'';
+}
+
+ abbr,  acronym  {
+	 border:0;
+}
+
+ /*----------------Background--------------------*/
+
+ #register  {
+	 background:#5371e1;
+	 position:absolute;
+	 z-index:6;
+	 padding:0.3%;
+	 padding-left:0.5%;
+	 padding-right:0.5%;
+	 color:#fff;
+	 left:2px;
+	 top:7%;
+	 font-family: "Century Gothic", "sans-serif";
+	 font-size: 1.1em;
+	 text-decoration:none;
+	 font-weight:bold;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px;
+}
+
+#hotelreg  {
+	 background:#5371e1;
+	 position:absolute;
+	 z-index:6;
+	 padding:0.3%;
+	 padding-left:0.5%;
+	 padding-right:0.5%;
+	 color:#fff;
+	 left:116px;
+	 top:7%;
+	 font-family: "Century Gothic", "sans-serif";
+	 font-size: 1.1em;
+	 text-decoration:none;
+	 font-weight:bold;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px;
+}
+
+#faqbutton  {
+	 background:#5371e1;
+	 position:absolute;
+	 z-index:6;
+	 padding:0.3%;
+	 padding-left:0.5%;
+	 padding-right:0.5%;
+	 color:#fff;
+	 left:262px;
+	 top:7%;
+	 font-family: "Century Gothic", "sans-serif";
+	 font-size: 1.1em;
+	 text-decoration:none;
+	 font-weight:bold;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px;
+}
+
+#contactus {
+	 background:#5371e1;
+	 position:absolute;
+	 z-index:10;
+	 padding:0.3%;
+	 padding-left:0.5%;
+	 padding-right:0.5%;
+	 color:#fff;
+	 right:640px;
+	 top:7%;
+	 font-family: "Century Gothic", "sans-serif";
+	 font-size: 1.1em;
+	 text-decoration:none;
+	 font-weight:bold;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px;
+}
+
+ /*------------------------------------* Menu *------------------------------------*/ .menu  {
+	 position:fixed;
+	 top:0%;
+	 left:0%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 margin-bottom:0%;
+	 margin-top:0%;
+	 /* Clear floats */ float:left;
+	 background:#5371e1;
+	 padding-left:36%;
+	 padding-top:0.25%;
+	 padding-bottom:0.3%;
+	 width:100%;
+	 height:4.5%;
+	 z-index:12;
+}
+
+ .menu ul li  {
+	 float:left;
+	 margin-right:0.25%;
+	 position:relative;
+	 list-style:none;
+}
+
+ .menu ul a  {
+	 display:block;
+	 padding:6%;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Century Gothic", "sans-serif";
+	 font-size:105%;
+	 background:#5371e1;
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+	 
+}
+
+ .menu ul img  {
+	 -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:6px ;
+}
+
+ .menu ul a:hover  {
+	 color:#fff;
+	 background:#333;
+	 text-decoration:underline;
+}
+
+ /*--- Dropdown ---*/ .menu ul li ul  {
+	 background:#fff;
+	 /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */ background:rgba(255,  255,  255,  0);
+	 /* But! Let's make the background fully transparent where we can,  we don't actually want to see it if we can help it... */ list-style:none;
+	 position:absolute;
+	 left:-9999999px;
+	 /* Hide off-screen when not needed (this is more accessible than display:none;
+	 ) */ 
+}
+
+ .menu ul li ul li  {
+	 padding-top:1px;
+	 /* Introducing a padding between the li and the a give the illusion spaced items */ float:none;
+}
+
+ .menu ul li ul a  {
+	 white-space:nowrap;
+	 /* Stop text wrapping and creating multi-line dropdown items */
+	 border:solid;
+	 border-width:1px;
+}
+
+ .menu ul li:hover ul  {
+	 /* Display the dropdown on hover */ 
+	 left:0;
+}
+
+ .menu ul li li:hover a  {
+	 /* These create persistent hover states,  meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */ background:#5371e1;
+	 text-decoration:underline;
+}
+
+ .menu ul li li:hover ul a  {
+	 /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */ text-decoration:none;
+}
+
+ .menu ul li ul a:hover  {
+	 /* Here we define the most explicit hover states--what happens when you hover each individual link. */ background:#333;
+}
+
+ .menu ul a:hover  {
+	 /* This is for the main branch links. */ background:#333;
+}
+
+ /*------------------------------------* Twitter Bar *------------------------------------*/ #twitter  {
+	 position:absolute;
+	 left:-9999999px;
+	 z-index:7;
+}
+
+ #twitbut:hover ~ #twitter  {
+	 position:absolute;
+	 left:-30%;
+	 top:102%;
+}
+
+ /*------------------------------------* Social Media Bar *------------------------------------*/ .socialbar  {
+	 position:absolute;
+	 background-color: #5371e1;
+	 width:20%;
+	 height:100%;
+	 z-index:10;
+	 left:66%;
+	 top:0%;
+}
+
+ .socialbar img  {
+	 padding-left:1%;
+	 padding-top:1.7%;
+}
+
+ /*------------------------------------* Main Frame Structure *------------------------------------*/ body  {
+	 overflow: hidden;
+	 max-width:100%;
+	 height:100%;
+	 background: url(subway/bgcity.png) no-repeat center center;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+}
+
+ #bground  {
+	 position:fixed;
+	 height:100%;
+	 width:100%;
+}
+
+ .frame  {
+	 width:100%;
+	 height:100%;
+	 position:absolute;
+}
+
+ a:hover  {
+	 cursor:crosshair;
+}
+
+ a:active  {
+	 color:red;
+}
+
+ .vertical  {
+	 position:absolute;
+	 left:48%;
+	 height:100%;
+	 width:2%;
+}
+
+ .horizontal  {
+	 position:absolute;
+	 top:48%;
+	 height:4%;
+	 width:100%;
+}
+
+ .lefthorizontal  {
+	 position:absolute;
+	 top:48%;
+	 height:4%;
+	 width:50%;
+}
+
+ .topvertical  {
+	 position:absolute;
+	 left:48%;
+	 height:50%;
+	 width:2%;
+
+}
+
+ .righthorizontal  {
+	 position:absolute;
+	 top:48%;
+	 right:0%;
+	 height:4%;
+	 width:52%;
+
+}
+
+ .bottomvertical  {
+	 position:absolute;
+	 left:48%;
+	 bottom:0%;
+	 height:50%;
+	 width:2%;
+
+}
+
+ .cross  {
+	 position:absolute;
+	 height:100%;
+	 width:100%;
+
+}
+
+ #homelogo  {
+	 height:100%;
+	 width:100%;
+
+}
+
+ /*------------------------------------* Frame 1: Mission *------------------------------------*/ #frame1  {
+	 left:700%;
+	 top:0%;
+
+}
+
+ #missiontext  {
+	 position:relative;
+	 left:15%;
+	 width:70%;
+	 text-align:left;
+	 font-size:130%;
+}
+
+ #missiontext ul li{
+	 margin-left:30px;
+}
+
+ /*------------------------------------* Frame 2: Vertical Line *------------------------------------*/ #frame2  {
+	 left:700%;
+	 top:100%;
+
+}
+
+ /*------------------------------------* Frame 3: Vertical Line *------------------------------------*/ #frame3  {
+	 left:700%;
+	 top:200%;
+
+}
+
+ /*------------------------------------* Frame 4: Vertical Line *------------------------------------*/ #frame4  {
+	 left:700%;
+	 top:300%;
+
+}
+
+ /*------------------------------------* Frame 5: Theme *------------------------------------*/ #frame5  {
+	 left:400%;
+	 top:400%;
+
+}
+
+ #themetext  {
+	 position:relative;
+	 left:25%;
+	 width:50%;
+	 text-align:left;
+	 font-size:140%;
+}
+
+ #foodtext  {
+	 position:relative;
+	 left:14%;
+	 width:72%;
+	 text-align:left;
+	 font-size:110%;
+}
+
+#foodtext li{
+	margin-left:30px;
+}
+
+ /*------------------------------------* Frame 6: Horizontal Line *------------------------------------*/ #frame6  {
+	 left:500%;
+	 top:400%;
+
+}
+
+ /*------------------------------------* Frame 7: Horizontal Line *------------------------------------*/ #frame7  {
+	 left:600%;
+	 top:400%;
+
+}
+
+ /*------------------------------------* Frame 8: What is ECAASU *------------------------------------*/ #frame8  {
+	 left:700%;
+	 top:400%;
+
+}
+
+ #historytext  {
+	 position:relative;
+	 left:25%;
+	 width:50%;
+	 text-align:left;
+	 font-size:130%;
+
+}
+
+ /*------------------------------------* Frame 9: Horizontal Line *------------------------------------*/ #frame9  {
+	 left:800%;
+	 top:400%;
+
+}
+
+ /*------------------------------------* Frame 10: Horizontal Line *------------------------------------*/ #frame10  {
+	 left:900%;
+	 top:400%;
+
+}
+
+ /*------------------------------------* Frame 11: Meet the Team *------------------------------------*/ #frame11  {
+	 left:1000%;
+	 top:400%;
+
+}
+
+ /*------------------------------------* Frame 12: Vertical Line *------------------------------------*/ #frame12  {
+	 left:700%;
+	 top:500%;
+
+}
+
+ /*------------------------------------* Frame 13: Vertical Line *------------------------------------*/ #frame13  {
+	 left:700%;
+	 top:600%;
+
+}
+
+ /*------------------------------------* Frame 14: Vertical Line *------------------------------------*/ #frame14  {
+	 left:700%;
+	 top:700%;
+
+}
+
+ /*------------------------------------* Frame 15: About Us *------------------------------------*/ #frame15  {
+	 left:700%;
+	 top:800%;
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:160%;
+
+}
+
+ #aboutimage  {
+	 position:absolute;
+	 left:15%;
+	 top:33%;
+	 height:35%;
+	 width:70%;
+	 z-index:3;
+
+}
+
+ #aboutuslinks  {
+	 position:absolute;
+	 top:55%;
+	 left:20%;
+	 width:65%;
+	 z-index:6;
+
+}
+
+ #aboutuslinks a  {
+	 margin-right:7.5%;
+
+}
+
+ /*------------------------------------* Frame 16: Vertical Line *------------------------------------*/ #frame16  {
+	 left:700%;
+	 top:900%;
+
+}
+
+ /*------------------------------------* Frame 17: Vertical Line *------------------------------------*/ #frame17  {
+	 left:700%;
+	 top:1000%;
+
+}
+
+ /*------------------------------------* Frame 18: Vertical Line *------------------------------------*/ #frame18  {
+	 left:700%;
+	 top:1100%;
+
+}
+
+ /*------------------------------------* Frame 19: Vertical Line *------------------------------------*/ #frame19  {
+	 left:700%;
+	 top:1200%;
+
+}
+
+ /*------------------------------------* Frame 20: ECAASU 2013 *------------------------------------*/ #frame20  {
+	 left:700%;
+	 top:1300%;
+
+}
+
+ #mainlogo  {
+	 position:absolute;
+	 left:15%;
+	 top:15%;
+
+}
+
+ /*------------------------------------* Frame 21: Trailblazer Award *------------------------------------*/ #frame21  {
+	 left:300%;
+	 top:100%;
+
+}
+
+ /*------------------------------------* Frame 22: Vertical Line *------------------------------------*/ #frame22  {
+	 left:300%;
+	 top:200%;
+
+}
+
+ /*------------------------------------* Frame 23: Vertical Line *------------------------------------*/ #frame23  {
+	 left:300%;
+	 top:300%;
+
+}
+
+ /*------------------------------------* Frame 24: Vertical Line *------------------------------------*/ #frame24  {
+	 left:300%;
+	 top:400%;
+
+}
+
+ /*------------------------------------* Frame 25: Workshops *------------------------------------*/ #frame25  {
+	 left:300%;
+	 top:500%;
+
+}
+
+ #workshopstext  {
+	 font-size:110%;
+	 position:relative;
+	 left:10%;
+	 width:80%;
+	 text-align:left;
+}
+
+ #trailblazertext  {
+	 font-size:110%;
+	 position:relative;
+	 left:10%;
+	 width:80%;
+	 text-align:left;
+}
+
+
+.workshopbox{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:4px;
+	margin-bottom:5px;
+	border:groove;
+	border-width:3px;
+}
+
+ /*------------------------------------* Frame 26: Vertical Line *------------------------------------*/ #frame26  {
+	 left:300%;
+	 top:600%;
+
+}
+
+ /*------------------------------------* Frame 27: Vertical Line *------------------------------------*/ #frame27  {
+	 left:300%;
+	 top:700%;
+
+}
+
+ /*------------------------------------* Frame 28: Vertical Line *------------------------------------*/ #frame28  {
+	 left:300%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 29: Speakers *------------------------------------*/ #frame29  {
+	 left:300%;
+	 top:900%;
+
+}
+
+ /*------------------------------------* Frame 30: Vertical Line *------------------------------------*/ #frame30  {
+	 left:300%;
+	 top:1000%;
+
+}
+
+ /*------------------------------------* Frame 31: Vertical Line *------------------------------------*/ #frame31  {
+	 left:300%;
+	 top:1100%;
+
+}
+
+ /*------------------------------------* Frame 32: Vertical Line *------------------------------------*/ #frame32  {
+	 left:300%;
+	 top:1200%;
+
+}
+
+ /*------------------------------------* Frame 33: Schedule *------------------------------------*/ #frame33  {
+	 left:0%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 34: Horizontal Line *------------------------------------*/ #frame34  {
+	 left:100%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 35: Horizontal Line *------------------------------------*/ #frame35  {
+	 left:200%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 36: Program *------------------------------------*/ #frame36  {
+	 left:300%;
+	 top:1300%;
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:150%;
+
+}
+
+ #programimage  {
+	 position:absolute;
+	 left:17%;
+	 top:36%;
+	 height:30%;
+	 width:60%;
+	 z-index:3;
+
+}
+
+ #programlinks  {
+	 position:absolute;
+	 top:57%;
+	 left:15%;
+	 width:80%;
+	 z-index:6;
+
+}
+
+ #programlinks a  {
+	 margin-right:3%;
+
+}
+
+ /*------------------------------------* Frame 37: Horizontal Line *------------------------------------*/ #frame37  {
+	 left:400%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 38: Horizontal Line *------------------------------------*/ #frame38  {
+	 left:500%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 39: Horizontal Line *------------------------------------*/ #frame39  {
+	 left:600%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 40: Vertical Line *------------------------------------*/ #frame40  {
+	 left:300%;
+	 top:1400%;
+
+}
+
+ /*------------------------------------* Frame 41: Vertical Line *------------------------------------*/ #frame41  {
+	 left:300%;
+	 top:1500%;
+
+}
+
+ /*------------------------------------* Frame 42: Vertical Line *------------------------------------*/ #frame42  {
+	 left:300%;
+	 top:1600%;
+
+}
+
+ /*------------------------------------* Frame 43: Performers *------------------------------------*/ #frame43  {
+	 left:300%;
+	 top:1700%;
+
+}
+
+ /*------------------------------------* Frame 44: Vertical Line *------------------------------------*/ #frame44  {
+	 left:300%;
+	 top:1800%;
+
+}
+
+ /*------------------------------------* Frame 45: Vertical Line *------------------------------------*/ #frame45  {
+	 left:300%;
+	 top:1900%;
+
+}
+
+ /*------------------------------------* Frame 46: Vertical Line *------------------------------------*/ #frame46  {
+	 left:300%;
+	 top:2000%;
+
+}
+
+ /*------------------------------------* Frame 47: Mixers *------------------------------------*/ #frame47  {
+	 left:300%;
+	 top:2100%;
+
+}
+
+ h6  {
+	 font-size:130%;
+	 text-decoration:underline;
+}
+
+ #mixertext  {
+	 position:relative;
+	 left:17%;
+	 width:66%;
+}
+
+ #parkingtext  {
+	 position:relative;
+	 left:14%;
+	 width:72%;
+}
+
+ #talenttext  {
+	 position:relative;
+	 left:15%;
+	 width:70%;
+}
+
+#talentcontest ul li{
+	position:relative;
+	left:10px;
+	list-style-position:inside;
+}
+
+ .talentcontentsubframe  {
+	 position:absolute;
+	 left:0px;
+	 width:95%;
+	 height: 92%;
+	 padding: 1% 2.5% 1% 2.5%;
+	 overflow:auto;
+	 font-size:80%;
+}
+
+
+ /*------------------------------------* Frame 48: Horizontal Line *------------------------------------*/ #frame48  {
+	 left:800%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 49: Horizontal Line *------------------------------------*/ #frame49  {
+	 left:900%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 50: Horizontal Line *------------------------------------*/ #frame50  {
+	 left:1000%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 51: Sponsors *------------------------------------*/ #frame51  {
+	 left:1100%;
+	 top:1300%;
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:160%;
+
+}
+
+ #sponsorsimage  {
+	 position:absolute;
+	 left:15%;
+	 top:33%;
+	 height:35%;
+	 width:70%;
+	 z-index:3;
+
+}
+
+ #sponsorslinks  {
+	 position:absolute;
+	 top:55%;
+	 left:17%;
+	 width:80%;
+	 z-index:6;
+
+}
+
+ #needmargin  {
+	 margin-right:53%;
+
+}
+
+ /*------------------------------------* Frame 52: Horizontal Line *------------------------------------*/ #frame52  {
+	 left:1200%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 53: Horizontal Line *------------------------------------*/ #frame53  {
+	 left:1300%;
+	 top:1300%;
+
+}
+
+ /*------------------------------------* Frame 54: How to Become *------------------------------------*/ #frame54  {
+	 left:1400%;
+	 top:1300%;
+
+}
+
+ .contentframenomenu  {
+	 font-family:"helvetica",  "sans-serif";
+	 position:relative;
+	 
+	 width:90%;
+	 height:80%;
+	 left:5%;
+	 top:9%;
+
+}
+
+ .sponsorsubframe  {
+	 position:absolute;
+	 left:0px;
+	 width:95%;
+	 height:100%;
+	 padding: 1% 2.5% 1% 2.5%;
+	 overflow:auto;
+	 font-size:80%;
+
+}
+
+ .sponsorsubframe ul  {
+	 list-style:none;
+
+}
+
+ #sponsortext  {
+	 position:relative;
+	 left:15%;
+	 width:70%;
+}
+
+ #sponsortext a  {
+	 color:#13B80D;
+	 font-weight:bold;
+
+}
+
+ #sponsortext ul  {
+	 display:block;
+
+}
+
+ #sponsorsextra  {
+	 text-align:center;
+
+}
+
+ #sponsorcolumns  {
+	 columns:140px 3;
+	 -webkit-columns:140px 3;
+	 /* Safari and Chrome */ -moz-columns:140px 3;
+	 /* Firefox */ -moz-column-gap:40px;
+	 /* Firefox */ -webkit-column-gap:40px;
+	 /* Safari and Chrome */ column-gap:40px;
+	 -moz-column-rule:3px outset green;
+	 /* Firefox */ -webkit-column-rule:3px outset green;
+	 /* Safari and Chrome */ column-rule:3px outset green;
+
+}
+
+
+#parkingtext hr{
+	color:green;
+}
+
+ h5  {
+	 text-align:center;
+	 font-size:120%;
+	 font-weight:bold;
+	 text-decoration:underline;
+
+}
+
+ th  {
+	 font-size:110%;
+	 font-weight:bold;
+
+}
+
+#sponsorstable table, td, tr {
+	 border: 3px solid green;
+	 text-align:center;
+}
+
+#parkingtable table, td, tr {
+	 border: 3px solid green;
+	 text-align:center;
+}
+
+ td,  th  {
+	 padding:3px;
+
+}
+
+ #tabletitle  {
+	 font-size:140%;
+	 font-weight:bold;
+	 text-align:center;
+
+}
+
+ /*------------------------------------* Frame 55: Vertical Line *------------------------------------*/ #frame55  {
+	 left:1100%;
+	 top:1400%;
+
+}
+
+ /*------------------------------------* Frame 56: Vertical Line *------------------------------------*/ #frame56  {
+	 left:1100%;
+	 top:1500%;
+
+}
+
+ /*------------------------------------* Frame 57: Vertical Line *------------------------------------*/ #frame57  {
+	 left:1100%;
+	 top:1600%;
+
+}
+
+ /*------------------------------------* Frame 58: Featured *------------------------------------*/ #frame58  {
+	 left:1100%;
+	 top:1700%;
+
+}
+
+ #featuredsponsors  {
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:350%;
+	 font-weight:bold;
+	 color:green;
+	 position:absolute;
+	 width:75%;
+	 left:13%;
+	 top:40%;
+
+}
+
+ /*------------------------------------* Frame 59: Vertical Line *------------------------------------*/ #frame59  {
+	 left:700%;
+	 top:1400%;
+
+}
+
+ /*------------------------------------* Frame 60: Vertical Line *------------------------------------*/ #frame60  {
+	 left:700%;
+	 top:1500%;
+
+}
+
+ /*------------------------------------* Frame 61: Vertical Line *------------------------------------*/ #frame61  {
+	 left:700%;
+	 top:1600%;
+
+}
+
+ /*------------------------------------* Frame 62: Vertical Line *------------------------------------*/ #frame62  {
+	 left:700%;
+	 top:1700%;
+
+}
+
+ /*------------------------------------* Frame 63: Food *------------------------------------*/ #frame63  {
+	 left:400%;
+	 top:1800%;
+
+}
+
+ /*------------------------------------* Frame 64: Horizontal Line *------------------------------------*/ #frame64  {
+	 left:500%;
+	 top:1800%;
+
+}
+
+ /*------------------------------------* Frame 65: Horizontal Line *------------------------------------*/ #frame65  {
+	 left:600%;
+	 top:1800%;
+
+}
+
+ /*------------------------------------* Frame 66: Logistics *------------------------------------*/ #frame66  {
+	 left:700%;
+	 top:1800%;
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:160%;
+
+}
+
+ #logisticsimage  {
+	 position:absolute;
+	 left:20%;
+	 top:36%;
+	 height:30%;
+	 width:60%;
+	 z-index:3;
+
+}
+
+ #logisticslinks  {
+	 position:absolute;
+	 top:57%;
+	 left:25%;
+	 width:80%;
+	 z-index:6;
+
+}
+
+ #logisticslinks a  {
+	 margin-right:5%;
+
+}
+
+ /*------------------------------------* Frame 67: Horizontal Line *------------------------------------*/ #frame67  {
+	 left:800%;
+	 top:1800%;
+
+}
+
+ /*------------------------------------* Frame 68: Horizontal Line *------------------------------------*/ #frame68  {
+	 left:900%;
+	 top:1800%;
+
+}
+
+ /*------------------------------------* Frame 69: Transportation *------------------------------------*/ #frame69  {
+	 left:1000%;
+	 top:1800%;
+
+}
+
+ #transportmenu  {
+	 position:absolute;
+	 top:12%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 width:600px;
+	 margin-left:41%;
+	 margin-right:40%;
+	 z-index:3;
+
+}
+
+ #transportmenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+ #transportmenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+
+}
+
+ #transportmenu a:hover  {
+	 color:#fff;
+	 background:#333;
+
+}
+
+ /*--- Dropdown ---*/ #transportmenu li ul  {
+	 background:#fff;
+	 /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */ background:rgba(255,  255,  255,  0);
+	 /* But! Let's make the background fully transparent where we can,  we don't actually want to see it if we can help it... */ list-style:none;
+	 position:absolute;
+	 left:-9999999px;
+	 /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+
+ #transportmenu li ul li  {
+	 padding-top:1px;
+	 /* Introducing a padding between the li and the a give the illusion spaced items */ float:none;
+
+}
+
+ #transportmenu li ul a  {
+	 white-space:nowrap;
+	 /* Stop text wrapping and creating multi-line dropdown items */
+}
+
+ #transportmenu li:hover ul  {
+	 /* Display the dropdown on hover */ left:0;
+	 /* Bring back on-screen when needed */
+}
+
+ #transportmenu li li:hover a  {
+	 /* These create persistent hover states,  meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */ background:#333;
+
+}
+
+ #transportmenu li li:hover ul a  {
+	 /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */ text-decoration:none;
+
+}
+
+ #transportmenu li ul a:hover  {
+	 /* Here we define the most explicit hover states--what happens when you hover each individual link. */ background:#333;
+
+}
+
+ #transportmenu a:hover  {
+	 /* This is for the main branch links. */ background:#333;
+
+}
+
+ h2  {
+	 text-align:center;
+	 position:relative;
+	 top:7%;
+	 font-family:"helvetica",  "sans-serif";
+	 font-size:140%;
+	 font-weight:bold;
+
+}
+
+ .contentframe  {
+	 font-family:"helvetica",  "sans-serif";
+	 position:relative;
+	 width:90%;
+	 height:80%;
+	 left:5%;
+	 top:13%;
+
+}
+
+ .contentsubframe  {
+	 position:absolute;
+	 left:0px;
+	 width:95%;
+	 height: 92%;
+	 padding: 1% 2.5% 1% 2.5%;
+	 overflow:auto;
+	 font-size:80%;
+	 text-align:center;
+}
+
+ .contentsubframe a  {
+	 color:red;
+
+}
+
+ .localheader  {
+	 font-size:140%;
+	 font-weight:bold;
+	 text-align:center;
+	 margin-bottom:20px;
+
+}
+
+ h3  {
+	 font-size:130%;
+	 font-weight:bold;
+	 text-decoration:underline;
+
+}
+
+ #colairport,  #colbus,  #colpublictrans,  #colcar,  #hotelmain,  #hotelairport,  #hotelcar,  #hotelsubway  {
+	 left:-9999999px;
+
+}
+
+ #colairport ul  {
+	 list-style:none;
+
+}
+
+ #hotelairport ul  {
+	 list-style:none;
+
+}
+
+ /*------------------------------------* Frame 70: Vertical Line *------------------------------------*/ #frame70  {
+	 left:700%;
+	 top:1900%;
+
+}
+
+ /*------------------------------------* Frame 71: Vertical Line *------------------------------------*/ #frame71  {
+	 left:700%;
+	 top:2000%;
+
+}
+
+ /*------------------------------------* Frame 72: Vertical Line *------------------------------------*/ #frame72  {
+	 left:700%;
+	 top:2100%;
+
+}
+
+ /*------------------------------------* Frame 73: Lodging *------------------------------------*/ #frame73  {
+	 left:700%;
+	 top:2200%;
+
+}
+
+ .lodgingtext  {
+	 position:relative;
+	 margin-left:auto;
+	 margin-right:auto;
+	 width:1050px;
+	 text-align:left;
+}
+
+ /*------------------------------------* Frame 74: Vertical Line *------------------------------------*/ #frame74  {
+	 left:700%;
+	 top:2300%;
+
+}
+
+ /*------------------------------------* Frame 75: Vertical Line *------------------------------------*/ #frame75  {
+	 left:700%;
+	 top:2400%;
+
+}
+
+ /*------------------------------------* Frame 76: Vertical Line *------------------------------------*/ #frame76  {
+	 left:700%;
+	 top:2500%;
+
+}
+
+ /*------------------------------------* Frame 77: Venues *------------------------------------*/ #frame77  {
+	 left:700%;
+	 top:2600%;
+
+}
+
+ #venuesmenu  {
+	 position:absolute;
+	 top:12%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 width:600px;
+	 margin-left:28%;
+	 margin-right:auto;
+	 z-index:3;
+
+}
+
+#lodgingmenu  {
+	 position:absolute;
+	 top:12%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 width:600px;
+	 margin-left:40%;
+	 margin-right:auto;
+	 z-index:3;
+
+}
+
+#lodgingmenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+#lodgingmenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#lodgingmenu  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+
+ #venuesmenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+ #venuesmenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+
+}
+
+ #venuesmenu a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+ /*--- Dropdown ---*/ #venuesmenu li ul  {
+	 background:#fff;
+	 /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */ background:rgba(255,  255,  255,  0);
+	 /* But! Let's make the background fully transparent where we can,  we don't actually want to see it if we can help it... */ list-style:none;
+	 position:absolute;
+	 left:-9999999px;
+	 /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+
+ #venuesmenu li ul li  {
+	 padding-top:1px;
+	 /* Introducing a padding between the li and the a give the illusion spaced items */ float:none;
+
+}
+
+ #venuesmenu li ul a  {
+	 white-space:nowrap;
+	 /* Stop text wrapping and creating multi-line dropdown items */
+}
+
+ #venuesmenu li:hover ul  {
+	 /* Display the dropdown on hover */ left:0;
+	 /* Bring back on-screen when needed */
+}
+
+ #venuesmenu li li:hover a  {
+	 /* These create persistent hover states,  meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */ background:#333;
+
+}
+
+ #venuesmenu li li:hover ul a  {
+	 /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */ text-decoration:none;
+
+}
+
+ #venuesmenu li ul a:hover  {
+	 /* Here we define the most explicit hover states--what happens when you hover each individual link. */ background:#333;
+
+}
+
+ #venuesmenu a:hover  {
+	 /* This is for the main branch links. */ background:#333;
+
+}
+
+ .description  {
+	 width:50%;
+	 margin-left:auto;
+	 margin-right:auto;
+}
+
+ #auditorium,  #cinema,  #partyspace,  #broadwayroom,  #satowroom,  #lowlibrary,  #lowrotunda,  #butlerlibrary,  #hamilton,  #diana,  #milbank  {
+	 left:-9999999px;
+}
+
+ #hostingoption {
+	 left:-9999999px;
+}
+
+ /*------------------------------------* Frame 78: Elbow *------------------------------------*/ #frame78  {
+	 left:400%;
+	 top:0%;
+}
+
+ /*------------------------------------* Frame 79: Horizontal Line *------------------------------------*/ #frame79  {
+	 left:500%;
+	 top:0%;
+}
+
+ /*------------------------------------* Frame 80: Horizontal Line *------------------------------------*/ #frame80  {
+	 left:600%;
+	 top:0%;
+
+}
+
+ /*------------------------------------* Frame 81: Horizontal Line *------------------------------------*/ #frame81  {
+	 left:800%;
+	 top:0%;
+
+}
+
+ /*------------------------------------* Frame 82: Horizontal Line *------------------------------------*/ #frame82  {
+	 left:900%;
+	 top:0%;
+
+}
+
+ /*------------------------------------* Frame 83: Elbow *------------------------------------*/ #frame83  {
+	 left:1000%;
+	 top:0%;
+
+}
+
+ /*------------------------------------* Frame 84: Vertical Line *------------------------------------*/ #frame84  {
+	 left:400%;
+	 top:100%;
+
+}
+
+ /*------------------------------------* Frame 85: Vertical Line *------------------------------------*/ #frame85  {
+	 left:400%;
+	 top:200%;
+
+}
+
+ /*------------------------------------* Frame 86: Vertical Line *------------------------------------*/ #frame86  {
+	 left:400%;
+	 top:300%;
+
+}
+
+ /*------------------------------------* Frame 87: Vertical Line *------------------------------------*/ #frame87  {
+	 left:1000%;
+	 top:100%;
+
+}
+
+ /*------------------------------------* Frame 88: Vertical Line *------------------------------------*/ #frame88  {
+	 left:1000%;
+	 top:200%;
+
+}
+
+ /*------------------------------------* Frame 89: Vertical Line *------------------------------------*/ #frame89  {
+	 left:1000%;
+	 top:300%;
+
+}
+
+ /*------------------------------------* Frame 90: Elbow *------------------------------------*/ #frame90  {
+	 left:0%;
+	 top:100%;
+
+}
+
+ /*------------------------------------* Frame 91: Horizontal Line *------------------------------------*/ #frame91  {
+	 left:100%;
+	 top:100%;
+
+}
+
+ /*------------------------------------* Frame 92: Horizontal Line *------------------------------------*/ #frame92  {
+	 left:200%;
+	 top:100%;
+
+}
+
+ /*------------------------------------* Frame 93: Vertical Line *------------------------------------*/ #frame93  {
+	 left:0%;
+	 top:200%;
+
+}
+
+ /*------------------------------------* Frame 94: Vertical Line *------------------------------------*/ #frame94  {
+	 left:0%;
+	 top:300%;
+
+}
+
+ /*------------------------------------* Frame 95: Vertical Line *------------------------------------*/ #frame95  {
+	 left:0%;
+	 top:400%;
+
+}
+
+ /*------------------------------------* Frame 96: Vertical Line *------------------------------------*/ #frame96  {
+	 left:0%;
+	 top:500%;
+
+}
+
+ /*------------------------------------* Frame 97: Vertical Line *------------------------------------*/ #frame97  {
+	 left:0%;
+	 top:600%;
+
+}
+
+ /*------------------------------------* Frame 98: Vertical Line *------------------------------------*/ #frame98  {
+	 left:0%;
+	 top:700%;
+
+}
+
+ /*------------------------------------* Frame 99: Vertical Line *------------------------------------*/ #frame99  {
+	 left:0%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 100: Vertical Line *------------------------------------*/ #frame100  {
+	 left:0%;
+	 top:900%;
+
+}
+
+ /*------------------------------------* Frame 101: Vertical Line *------------------------------------*/ #frame101  {
+	 left:0%;
+	 top:1000%;
+
+}
+
+ /*------------------------------------* Frame 102: Vertical Line *------------------------------------*/ #frame102  {
+	 left:0%;
+	 top:1100%;
+
+}
+
+ /*------------------------------------* Frame 103: Vertical Line *------------------------------------*/ #frame103  {
+	 left:0%;
+	 top:1200%;
+
+}
+
+ /*------------------------------------* Frame 104: Vertical Line *------------------------------------*/ #frame104  {
+	 left:0%;
+	 top:1400%;
+
+}
+
+ /*------------------------------------* Frame 105: Vertical Line *------------------------------------*/ #frame105  {
+	 left:0%;
+	 top:1500%;
+
+}
+
+ /*------------------------------------* Frame 106: Vertical Line *------------------------------------*/ #frame106  {
+	 left:0%;
+	 top:1600%;
+
+}
+
+ /*------------------------------------* Frame 107: Vertical Line *------------------------------------*/ #frame107  {
+	 left:0%;
+	 top:1700%;
+
+}
+
+ /*------------------------------------* Frame 108: Vertical Line *------------------------------------*/ #frame108  {
+	 left:0%;
+	 top:1800%;
+
+}
+
+ /*------------------------------------* Frame 109: Vertical Line *------------------------------------*/ #frame109  {
+	 left:0%;
+	 top:1900%;
+
+}
+
+ /*------------------------------------* Frame 110: Vertical Line *------------------------------------*/ #frame110  {
+	 left:0%;
+	 top:2000%;
+
+}
+
+ /*------------------------------------* Frame 111: Elbow *------------------------------------*/ #frame111  {
+	 left:0%;
+	 top:2100%;
+
+}
+
+ /*------------------------------------* Frame 112: Horizontal Line *------------------------------------*/ #frame112  {
+	 left:100%;
+	 top:2100%;
+
+}
+
+ /*------------------------------------* Frame 113: Horizontal Line *------------------------------------*/ #frame113  {
+	 left:200%;
+	 top:2100%;
+
+}
+
+ /*------------------------------------* Frame 114: Horizontal Line *------------------------------------*/ #frame114  {
+	 left:1200%;
+	 top:1700%;
+
+}
+
+ /*------------------------------------* Frame 115: Horizontal Line *------------------------------------*/ #frame115  {
+	 left:1300%;
+	 top:1700%;
+
+}
+
+ /*------------------------------------* Frame 116: Vertical Line *------------------------------------*/ #frame116  {
+	 left:1400%;
+	 top:1400%;
+
+}
+
+ /*------------------------------------* Frame 117: Vertical Line *------------------------------------*/ #frame117  {
+	 left:1400%;
+	 top:1500%;
+
+}
+
+ /*------------------------------------* Frame 118: Vertical Line *------------------------------------*/ #frame118  {
+	 left:1400%;
+	 top:1600%;
+
+}
+
+ /*------------------------------------* Frame 119: Elbow *------------------------------------*/ #frame119  {
+	 left:1400%;
+	 top:1700%;
+
+}
+
+ /*------------------------------------* Frame 120: Vertical Line *------------------------------------*/ #frame120  {
+	 left:400%;
+	 top:1900%;
+
+}
+
+ /*------------------------------------* Frame 121: Vertical Line *------------------------------------*/ #frame121  {
+	 left:400%;
+	 top:2000%;
+
+}
+
+ /*------------------------------------* Frame 122: Vertical Line *------------------------------------*/ #frame122  {
+	 left:400%;
+	 top:2100%;
+
+}
+
+ /*------------------------------------* Frame 123: Vertical Line *------------------------------------*/ #frame123  {
+	 left:400%;
+	 top:2200%;
+
+}
+
+ /*------------------------------------* Frame 124: Vertical Line *------------------------------------*/ #frame124  {
+	 left:400%;
+	 top:2300%;
+
+}
+
+ /*------------------------------------* Frame 125: Vertical Line *------------------------------------*/ #frame125  {
+	 left:400%;
+	 top:2400%;
+
+}
+
+ /*------------------------------------* Frame 126: Vertical Line *------------------------------------*/ #frame126  {
+	 left:400%;
+	 top:2500%;
+
+}
+
+ /*------------------------------------* Frame 127: Elbow *------------------------------------*/ #frame127  {
+	 left:400%;
+	 top:2600%;
+
+}
+
+ /*------------------------------------* Frame 128: Horizontal Line *------------------------------------*/ #frame128  {
+	 left:500%;
+	 top:2600%;
+
+}
+
+ /*------------------------------------* Frame 129: Horizontal Line *------------------------------------*/ #frame129  {
+	 left:600%;
+	 top:2600%;
+
+}
+
+ /*------------------------------------* Frame 130: Horizontal Line *------------------------------------*/ #frame130  {
+	 left:800%;
+	 top:2600%;
+
+}
+
+ /*------------------------------------* Frame 131: Horizontal Line *------------------------------------*/ #frame131  {
+	 left:900%;
+	 top:2600%;
+
+}
+
+ /*------------------------------------* Frame 132: Vertical Line *------------------------------------*/ #frame132  {
+	 left:1000%;
+	 top:1900%;
+
+}
+
+ /*------------------------------------* Frame 133: Vertical Line *------------------------------------*/ #frame133  {
+	 left:1000%;
+	 top:2000%;
+
+}
+
+ /*------------------------------------* Frame 134: Vertical Line *------------------------------------*/ #frame134  {
+	 left:1000%;
+	 top:2100%;
+
+}
+
+ /*------------------------------------* Frame 135: Vertical Line *------------------------------------*/ #frame135  {
+	 left:1000%;
+	 top:2200%;
+
+}
+
+ /*------------------------------------* Frame 136: Vertical Line *------------------------------------*/ #frame136  {
+	 left:1000%;
+	 top:2300%;
+
+}
+
+ /*------------------------------------* Frame 137: Vertical Line *------------------------------------*/ #frame137  {
+	 left:1000%;
+	 top:2400%;
+
+}
+
+ /*------------------------------------* Frame 138: Vertical Line *------------------------------------*/ #frame138  {
+	 left:1000%;
+	 top:2500%;
+
+}
+
+ /*------------------------------------* Frame 139: Elbow *------------------------------------*/ #frame139  {
+	 left:1000%;
+	 top:2600%;
+
+}
+
+ /*------------------------------------* Frame 140: Vertical Line *------------------------------------*/ #frame140  {
+	 left:400%;
+	 top:500%;
+
+}
+
+ /*------------------------------------* Frame 141: Vertical Line *------------------------------------*/ #frame141  {
+	 left:400%;
+	 top:600%;
+
+}
+
+ /*------------------------------------* Frame 142: Vertical Line *------------------------------------*/ #frame142  {
+	 left:400%;
+	 top:700%;
+
+}
+
+ /*------------------------------------* Frame 143: Vertical Line *------------------------------------*/ #frame143  {
+	 left:1000%;
+	 top:500%;
+
+}
+
+ /*------------------------------------* Frame 144: Vertical Line *------------------------------------*/ #frame144  {
+	 left:1000%;
+	 top:600%;
+
+}
+
+ /*------------------------------------* Frame 145: Vertical Line *------------------------------------*/ #frame145  {
+	 left:1000%;
+	 top:700%;
+
+}
+
+ /*------------------------------------* Frame 146: Elbow *------------------------------------*/ #frame146  {
+	 left:400%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 147: Horizontal Line *------------------------------------*/ #frame147  {
+	 left:500%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 148: Horizontal Line *------------------------------------*/ #frame148  {
+	 left:600%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 149: Horizontal Line *------------------------------------*/ #frame149  {
+	 left:800%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 150: Horizontal Line *------------------------------------*/ #frame150  {
+	 left:900%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 151: Elbow *------------------------------------*/ #frame151  {
+	 left:1000%;
+	 top:800%;
+
+}
+
+ /*------------------------------------* Frame 152: Horizontal Line *------------------------------------*/ #frame152  {
+	 left:500%;
+	 top:2200%;
+
+}
+
+ /*------------------------------------* Frame 153: Horizontal Line *------------------------------------*/ #frame153  {
+	 left:600%;
+	 top:2200%;
+
+}
+
+ /*------------------------------------* Frame 154: Horizontal Line *------------------------------------*/ #frame154  {
+	 left:800%;
+	 top:2200%;
+
+}
+
+ /*------------------------------------* Frame 155: Horizontal Line *------------------------------------*/ #frame155  {
+	 left:900%;
+	 top:2200%;
+}
+
+ /*------------------------------------* Frame 156: Horizontal Line *------------------------------------*/ #frame156  {
+	 left:1100%;
+	 top:900%;
+
+}
+
+ /*------------------------------------* Frame 157: Horizontal Line *------------------------------------*/ #frame157  {
+	 left:1100%;
+	 top:1000%;
+
+}
+
+ /*------------------------------------* Frame 158: Horizontal Line *------------------------------------*/ #frame158  {
+	 left:1100%;
+	 top:1100%;
+}
+
+ /*------------------------------------* Frame 159: Horizontal Line *------------------------------------*/ #frame159  {
+	 left:1100%;
+	 top:1200%;
+}
+
+ /*------------------------------------* Frame 160: Horizontal Line *------------------------------------*/ #frame160  {
+	 left:1200%;
+	 top:900%;
+}
+
+
+ /*------------------------------------* Frame 161: Horizontal Line *------------------------------------*/ #frame161  {
+	 left:1300%;
+	 top:900%;
+}
+
+ /*------------------------------------* Frame 162: Horizontal Line *------------------------------------*/ #frame162  {
+	 left:1400%;
+	 top:900%;
+}
+
+ /*------------------------------------* Frame 163: Horizontal Line *------------------------------------*/ #frame163  {
+	 left:1400%;
+	 top:1000%;
+
+}
+
+ /*------------------------------------* Frame 164: Horizontal Line *------------------------------------*/ #frame164  {
+	 left:1400%;
+	 top:1100%;
+
+}
+
+ /*------------------------------------* Frame 165 Horizontal Line *------------------------------------*/ #frame165  {
+	 left:1400%;
+	 top:1200%;
+
+}
+
+ /*------------------------------------* Meet the Team *------------------------------------*/ .meettheteam  {
+	 position:absolute;
+	 top:3%;
+	 left:3%;
+	 padding:1%;
+	 text-align:left;
+	 width:92%;
+	 height:90%;
+	 line-height: 40%;
+	 font: 13px/normal Arial;
+	 border:solid;
+	 border-color:#5371e1;
+	 border-width:1px;
+
+}
+
+ .board  {
+	 color:white;
+	 background:#5371e1;
+	 padding-bottom:6px;
+	 border:solid;
+	 border-width:2px;
+	 border-color:black;
+	 border-bottom:none;
+	 width:195px;
+
+}
+
+ .boardvisible  {
+	 color:white;
+	 padding-bottom:6px;
+	 border:solid;
+	 border-width:2px;
+	 border-color:black;
+	 border-bottom:none;
+	 width:195px;
+
+}
+
+ .selector  {
+	 opacity:0;
+	 position:absolute;
+	 left:12px;
+	 top:42px;
+
+}
+
+ .meettheselector  {
+	 opacity:0;
+	 position:absolute;
+	 left:6px;
+	 top:2px;
+	 border:solid;
+	 border-width:1px;
+	 border-color:black;
+
+}
+
+ #sjwen  {
+	 border-bottom:solid;
+	 border-bottom-width:2px;
+	 border-bottom-color:black;
+
+}
+
+ .board img  {
+	 float:left;
+	 margin-right:10px;
+
+}
+
+ .bios  {
+	 opacity:0;
+	 position:absolute;
+	 left:270px;
+	 top:55px;
+	 padding:40px;
+	 padding-top:16px;
+	 height:424px;
+	 width:440px;
+	 border:solid;
+	 border-width:1px;
+
+}
+
+ .biovisible  {
+	 opacity:1;
+	 font-size:85%;
+	 position:absolute;
+	 left:240px;
+	 top:40px;
+	 padding:40px;
+	 padding-top:16px;
+	 padding-right:30px;
+	 height:471px;
+	 width:480px;
+	 border:solid;
+	 border-width:1px;
+
+}
+
+ h6  {
+	 font-size:110%;
+	 font-weight:bold;
+	 padding-top:5px;
+
+}
+
+ h7  {
+	 font-size:90%;
+
+}
+
+ h8  {
+	 font-size:200%;
+	 color:#5371e1;
+	 margin-left:auto;
+	 font-weight:bold;
+	 text-shadow:2px 2px 3px #5371e1;
+
+}
+
+ h9  {
+	 font-size:120%;
+	 color:#5371e1;
+	 margin-left:auto;
+	 font-weight:bold;
+	 text-shadow:2px 2px 3px #5371e1;
+
+}
+
+ /*------------------------------------* Under Construction *------------------------------------*/ #keynote  {
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:350%;
+	 font-weight:bold;
+	 color:#F88300;
+	 position:absolute;
+	 width:75%;
+	 left:13%;
+	 top:40%;
+}
+
+ #performers  {
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:350%;
+	 font-weight:bold;
+	 color:#F88300;
+	 position:absolute;
+	 width:75%;
+	 left:20%;
+	 top:40%;
+}
+
+ #food  {
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:350%;
+	 font-weight:bold;
+	 color:#B8B814;
+	 position:absolute;
+	 width:75%;
+	 left:13%;
+	 top:40%;
+}
+
+ #schedule  {
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:350%;
+	 font-weight:bold;
+	 color:#F88300;
+	 position:absolute;
+	 width:50%;
+	 left:30%;
+	 top:50px;
+}
+
+ #workshop  {
+	 font-family: "Century Gothic",  "sans-serif";
+	 font-size:350%;
+	 font-weight:bold;
+	 color:#F88300;
+	 position:absolute;
+	 width:75%;
+	 left:25%;
+	 top:40%;
+}
+
+#dhtmltooltip{
+	font-size:90%;
+	font-family: "Century Gothic",  "sans-serif";
+	position: absolute;
+	width: 150px;
+	border: 2px solid black;
+	padding: 5px;
+	background-color: green;
+	visibility: hidden;
+	z-index: 100;
+}
+
+ /*------------------------------------* Menu *------------------------------------*/ 
+ .meetus  {
+	 top:0%;
+	 left:0%;
+	 font-size:95%;
+	 list-style:none;
+	 font-weight:bold;
+	 padding:10px;
+	 z-index:4;
+}
+
+ .meetus ul li  {
+	 float:left;
+	 margin-right:0.25%;
+	 position:relative;
+	 list-style:none;
+}
+
+ .meetus ul a  {
+	 display:block;
+	 height:20px;
+	 padding-top:5px;
+	 padding-bottom:5px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Century Gothic", "sans-serif";
+	 font-size:105%;
+	 background:#5371e1;
+	 text-decoration:none;
+	 border:solid;
+	 border-width:1px;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+ .meetus ul img  {
+	 -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:6px ;
+}
+
+ .meetus ul a:hover  {
+	 color:#fff;
+	 background:#333;
+	 text-decoration:underline;
+}
+
+ /*--- Dropdown ---*/ .meetus ul li ul  {
+	 background:#fff;
+	 /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */ background:rgba(255,  255,  255,  0);
+	 /* But! Let's make the background fully transparent where we can,  we don't actually want to see it if we can help it... */ list-style:none;
+	 position:absolute;
+	 left:-9999999px;
+	 /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+
+ .meetus ul li ul li  {
+	 padding-top:1px;
+	 /* Introducing a padding between the li and the a give the illusion spaced items */ float:none;
+
+}
+
+ .meetus ul li ul a  {
+	 white-space:nowrap;
+	 /* Stop text wrapping and creating multi-line dropdown items */ 
+	 border:solid;
+	 border-width:1px;
+}
+
+ .meetus ul li:hover ul  {
+	 /* Display the dropdown on hover */ left:0;
+	 /* Bring back on-screen when needed */
+}
+
+ .meetus ul li li:hover a  {
+	 /* These create persistent hover states,  meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */ background:#333;
+	 text-decoration:underline;
+
+}
+
+ .meetus ul li li:hover ul a  {
+	 /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */ text-decoration:none;
+
+}
+
+ .meetus ul li ul a:hover  {
+	 /* Here we define the most explicit hover states--what happens when you hover each individual link. */ background:#333;
+
+}
+
+ .meetus ul a:hover  {
+	 /* This is for the main branch links. */ background:#333;
+}
+
+ #contentframeteam  {
+	 font-family:"helvetica",  "sans-serif";
+	 position:relative;
+	 background: #5371e1;
+	 width:95%;
+	 height:83%;
+	 left:2.5%;
+	 top:9%;
+	 color:white;
+}
+
+#meetprogramming{
+	position:absolute;
+	left:2.5%;
+	top:4%;
+}
+
+#meetmgao{
+	position:absolute;
+	left:2.5%;
+	top: 38%;
+}
+
+#meetentertainment{
+	position:absolute;
+	left:2.5%;
+	top:72%;
+}
+
+
+#meetlogisticsadmin{
+	position:absolute;
+	bottom:8%;
+	left:30%;
+}
+
+#meettkit{
+	position:absolute;
+	bottom:8%;	
+	left:48%;
+}
+
+#meettech{
+	position:absolute;
+	bottom:8%;	
+	left:62%;
+}
+
+#meetfundraising{
+	position:absolute;
+	right:2.5%;	
+	top:4%;
+}
+
+#meetdfu{
+	position:absolute;
+	right:2.5%;
+	top: 38%;
+}
+
+#meetprmarketing{
+	position:absolute;
+	right:2.5%;
+	top:72%;
+}
+
+ .meetsubframe  {
+	 position:absolute;
+	 left:14.5%;
+	 width:72%;
+	 height:81%;
+	 font-size:85%;
+	 z-index:7;
+	 border:solid;
+	 	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+.meetbios{
+	padding-top:6px;
+	position:absolute;
+	width:100%;
+}
+
+h4{
+	 width:100%;
+	 text-align:center;
+	 position:relative;
+	 top:0%;
+	 font-family:"helvetica",  "sans-serif";
+	 font-size:140%;
+	 font-weight:bold;
+}
+
+h1{
+	text-align:center;
+	 position:relative;
+	 top:0%;
+	 font-family:"helvetica",  "sans-serif";
+	 font-size:80%;
+	 font-weight:bold;
+}
+
+.memberinfoleft{
+}
+
+.memberpicleft{
+	display:block;
+	margin-left:60px;
+	float:left;
+}
+
+.memberpicsmallleft{
+	float:right;
+	padding-left:20px;
+	padding-bottom:10px;
+}
+
+.membercontentleft{
+	width:500px;
+	float:left;
+	display:block;
+	margin-left:20px;
+}
+
+.memberpicright{
+	display:block;
+	margin-left:20px;
+	float:left;
+}
+
+.memberpicsmallright{
+	float:left;
+	padding-right:20px;
+	padding-bottom:10px;
+}
+
+.membercontentright{
+	width:500px;
+	float:left;
+	display:block;
+	margin-left:60px;
+}
+
+#programminginfo{
+	left:-9999999px;
+}
+#jkooinfo{
+	left:-9999999px;
+}
+#jtanginfo{
+	left:-9999999px;
+}
+#mnakadainfo{
+	left:-9999999px;
+}
+#mgaoinfo{
+	left:-9999999px;
+}
+#entertainmentinfo{
+	left:-9999999px;
+}
+#gchowinfo{
+	left:-9999999px;
+}
+#kzhanginfo{
+	left:-9999999px;
+}
+#logisticsadmininfo{
+	left:-9999999px;
+}
+#acheninfo{
+	left:-9999999px;
+}
+#hliewinfo{
+	left:-9999999px;
+}
+#tkitinfo{
+	left:-9999999px;
+}
+#techinfo{
+	left:-9999999px;
+}
+#jweninfo{
+	left:-9999999px;
+}
+#fundraisinginfo{
+	left:-9999999px;
+}
+#cruaninfo{
+	left:-9999999px;
+}
+#bdifrancescoinfo{
+	left:-9999999px;
+}
+#dsinghinfo{
+	left:-9999999px;
+}
+#ayuinfo{
+	left:-9999999px;
+}
+#dfuinfo{
+	left:-9999999px;
+}
+#prmarketinginfo{
+	left:-9999999px;
+}
+#vkausikinfo{
+	left:-9999999px;
+}
+#jhoinfo{
+	left:-9999999px;
+}
+.grouppic{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+#speakermenu  {
+	 position:absolute;
+	 top:12%;
+	 left:50%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 width:700px;
+	 margin: 0 0 0 -350px;
+	 z-index:3;
+}
+
+#speakermenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+#speakermenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#speakermenu  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+#cendanabio{
+	left:-9999999px;
+	font-size:75%;
+}
+
+.speakertext  {
+	 position:relative;
+	 margin-left:auto;
+	 margin-right:auto;
+	 width:750px;
+	 text-align:left;
+}
+
+#performermenu1  {
+	 position:absolute;
+	 top:12%;
+	 left:50%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 width:540px;
+	 margin: 0 0 0 -270px;
+	 z-index:10;
+}
+
+#performermenu1 li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+#performermenu1 a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#performermenu1  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+#performermenu2  {
+	 position:absolute;
+	 top:19%;
+	 left:49.5%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 width:546px;
+	 margin: 0 0 0 -273px;
+	 z-index:10;
+}
+
+#performermenu2 li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+}
+
+#performermenu2 a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#performermenu2  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+.performertext  {
+	 position:relative;
+	 margin-left:auto;
+	 margin-right:auto;
+	 width:750px;
+	 top:30px;
+	 text-align:left;
+}
+
+#jasonchenbio{
+	left:-9999999px;
+}
+#clarachungbio{
+	left:-9999999px;
+}
+#davidsobio{
+	left:-9999999px;
+}
+#taiyomagneticbio{
+	left:-9999999px;
+}
+#illliteracybio{
+	left:-9999999px;
+}
+#ellenkimbio{
+	left:-9999999px;
+}
+#ayehasegawabio{
+	left:-9999999px;
+}
+#funkanometrybio{
+	left:-9999999px;
+}
+
+.frontlabel{
+	position:absolute;
+	font-size:115%;
+	top:61.5%;
+	z-index:50;
+	font-family:"Century Gothic", "sans-serif";
+}
+
+
+.figure{
+	color:white;
+	font-size:85%;
+	text-align:center;
+	padding: 5px;
+}
+
+.annlink div:hover  {
+	 color:#fff;
+	 background:#333;
+	 text-decoration:underline;
+}
+
+
+
+
+.expstickybar{
+	position:fixed;
+	color: white;
+	font-family: "Century Gothic", "sans-serif";
+	padding: 5px;
+	bottom:0px;
+	right:0; /*horizontally center bar in window*/
+	left:0; /*horizontally center bar in window*/
+	background: #5371e1;
+	z-index: 50;
+	width:auto; /*set width of bar to width of entire window*/
+	font-weight:bold;
+}
+
+.expstickybar a{
+	color: white;
+}
+
+#mingusbio{
+	left:-9999999px;
+}
+#luibio{
+	left:-9999999px;
+}
+#syedbio{
+	left:-9999999px;
+}
+#cendanabio{
+	left:-9999999px;
+}
+#chinbio{
+	left:-9999999px;
+}
+#dhtmltooltip{
+    position: absolute;
+    width: 150px;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: green;
+    visibility: hidden;
+    z-index: 100;
+}
+.sponsorimage{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+#regsent{
+      color:white;
+      position:relative;
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+      background:#5371e1;
+      z-index:5;
+}
+
+.donation{
+      color:white;
+      position:relative;
+      width:15%;
+      top:3%;
+      padding-top:5px;
+      padding-bottom:5px;
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+      background:#5371e1;
+      z-index:5;
+          /* Firefox v1.0+ */
+    -moz-border-radius:10px ;
+    /* Safari v3.0+ and by Chrome v0.2+ */
+    -webkit-border-radius:10px ;
+    /* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+    border-radius:10px ;
+}
+
+#communitymenu  {
+	 position:absolute;
+	 top:12%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 z-index:3;
+	 width:390px;
+	 left:50%;
+	 margin: 0 0 0 -195px;
+}
+
+#communitymenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+#communitymenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#communitymenu  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+#participatingcolumns  {
+	text-align:left;
+	 -moz-column-count:4; /* Firefox */
+	-webkit-column-count:4; /* Safari and Chrome */
+	column-count:4;
+	position:relative;
+	left:2%;
+}
+#participating{
+	left:-9999999px;
+}
+#kascon{
+	text-align:left;
+	left:-9999999px;	
+}
+
+#kascontext{
+	position:relative;
+	width:800px;
+	left:50%;
+	margin: 0 0 0 -400px;
+}
+
+#travelcode{
+	left:-9999999px;
+}
+
+#promomenu  {
+	 position:absolute;
+	 top:12%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 z-index:3;
+	 width:800px;
+	 left:50%;
+	 margin: 0 0 0 -400px;
+}
+
+#promomenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+#promomenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#promomenu  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+#meetjasondavidclara{
+	left:-9999999px;
+}
+#hudsonalt{
+	left:-9999999px;
+}
+#giveaways{
+	left:-9999999px;
+}
+.promotext{
+	position:absolute;
+	text-align:left;
+	width:900px;
+	left:50%;
+	margin: 0 0 0 -450px;
+}
+
+#mixermenu  {
+	 position:absolute;
+	 top:12%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 z-index:3;
+	 width:426px;
+	 left:50%;
+	 margin: 0 0 0 -213px;
+}
+
+#mixermenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+#mixermenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#mixermenu  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+#gala{
+	left:-9999999px;
+}
+#limitlessafterparty{
+	left:-9999999px;
+}
+#lgbtqaafterparty{
+	left:-9999999px;
+}

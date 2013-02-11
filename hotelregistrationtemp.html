@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="ECAASU 2013 Hudson Hotel Registration Portal Temp">
+    <meta name='keywords' content='ecaasu, east coast, east coast asian american student union, student union, asian american,asian,asian american politics,politics, culture, community service' /> 
+    <title>Hotel Registration</title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' type='text/css' href='registration.css' />
+    <script type='text/javascript' src='hotelreg.js'></script>
+    
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35915936-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+    
+  <body>
+        
+        <img id="bground" src="subway/bgcity.png" alt="NYC Background"/>
+        
+        <section class = 'menu'>
+      <a id='register' href="http://www.ecaasu2013.org/registration.php" >Register Here</a>
+      <a id='goback' href="http://www.ecaasu2013.org/" >Go Back</a>
+    <div class='socialbar'>
+            <a id='twitbut' href='https://twitter.com/ecaasu'><img src='images/twitter.png' alt="Twitter Logo"/></a>
+            <a href='http://www.facebook.com/Ecaasu2013'><img src='images/facebook.png' alt="Facebook Logo"/></a>
+            <a href='http://www.tumblr.com/tagged/ecaasu'><img id='tumblr' src='images/tumblr2.png' alt="Tumblr Logo"/></a>
+            <a href='mailto:tech@ecaasu2013.org'><img src='images/email.png' alt="Email Logo"></a>
+            <script charset='utf-8' src='http://widgets.twimg.com/j/2/widget.js'></script>
+            <div id='twitter'>
+                 <script>
+                   new TWTR.Widget({
+                   version: 2,
+                   type: 'profile',
+                   rpp: 4,
+                   interval: 30000,
+                   width: 250,
+                   height: 300,
+                   theme: {
+                   shell: {
+                   background: '#5371e1',
+                   color: '#ffffff'
+                   },
+                   tweets: {
+                   background: '#75b2dd',
+                   color: '#000000',
+                   links: '#000dff'
+                   }
+                   },
+                   features: {
+                   scrollbar: false,
+                   loop: false,
+                   live: false,
+                   behavior: 'all'
+                   }
+                   }).render().setUser('ECAASU2013').start();
+                 </script>
+           </div><!--twitter-->
+      </div><!--social bar-->
+    </section><!--header-->
+        
+        <h2>Hotel Registration</h2>
+        
+        <h2 style="font-size:120%;">The special Hudson hotel deals for ECAASU are:<br/>
+            Standard Queen (1 Bed = 144-167 sq ft.): $119/night<br/>
+            Deluxe Double (2 Bed = 306-350 sq ft.): $199/night<br/>
+            <img src="standardqueen.jpg" alt="Hudson Hotel Standard Queen Room"/><br/>
+            for the nights of Friday (2/22) and Saturday (2/23)<br/><br/>
+        Check out the Hotel Hudson's website: <a class="faqa" target="_blank" href="http://www.hudsonhotel.com/en-us/">Here</a><br/>
+        For frequently asked questions regarding hotel registration check: <a class="faqa" href="http://www.ecaasu2013.org/faq.html">FAQ</a><br/><br/>
+        <b>If you purchase reservations on the Hudson Hotel's website, you will not receive the special ECAASU deals and payments will not be tax-free.</b> <br/><br/>
+        <b><i>Please fill out the names and email addresses of <u>all</u> the people who will be staying in this room (respective capacity of 2). It will be difficult to add names at a later date.</i></b><br/><br/>
+        </h2>      
+        
+        <form name = "hotelreg" action="hotelprocess.php" method="post" style="padding-top:1%;">
+         <br /><br />
+         
+         <section class="infoframe">
+             <div id="roomtype">   
+                <label>Room Type</label>
+                <select name="roomtype" onchange="roomAdjust();">
+                    <option value="Standard Queen">Standard Queen</option>
+                    <option value="Deluxe Double">Deluxe Double</option>
+                </select>
+             </div>
+         </section>
+         
+         <section id="pointframe" class="guestinfoframe">
+            <h3>Point Person Information</h3>
+            <p style="font-size:80%;text-align:center;">This should be the person who will be paying.</p>
+            <div class="name">
+                 <label>Name:</label>
+                 <br />
+                 <div class="firstname">
+                   <input type="text" name="p1first" value="First">
+                 </div>
+            
+                 <div class="lastname">  
+                   <input type = "text" name="p1last" value="Last">
+                 </div>
+            </div>
+            
+            <div class="emailaddress">
+              <label>Personal Email Address:</label><br />
+              <input type = "text" name="p1email">
+              Please make sure that this email address is a personal address and not a group one.
+            </div>
+            
+            <div id="phonenumber">  
+              <label>Phone Number:</label><br />
+              <input type = "text" name="p1phone">
+              (###) ###-####
+            </div>
+            
+        </section>
+        
+        <section class="guestinfoframe">
+            <h3>Guest 2 Information</h3>
+            <div class="name">
+                 <label>Name:</label>
+                 <br />
+                 <div class="firstname">
+                   <input type="text" name="p2first" value="First">
+                 </div>
+            
+                 <div class="lastname">  
+                   <input type = "text" name="p2last" value="Last">
+                 </div>
+            </div>
+            
+            <div class="emailaddress">
+              <label>Email Address:</label><br />
+              <input type = "text" name="p2email">
+              Please make sure that this email address is the same as the one you registered with.
+            </div>
+            <br />
+        </section>
+        
+        <section class="guestinfoframe">
+            <div id="guest3"></div>
+        </section>
+
+        <section class="guestinfoframe">
+            <div id="guest4"></div>
+        </section>
+                
+        <section class="infoframe">
+              <label style="margin-right:0.5%">Group Code:</label><br />
+              <input type="text" name="groupcode" style="padding-right:8%;margin-right: 0.5%;"><br/>
+              (Only fill out if you are affiliated with a group that has contacted us and are trying to purchase multiple reservations at once.)<br/><br/>
+              <label>Extra Info (Feel free to tell us any extra information or anything you feel is necessary):</label><br>
+              <textarea name="extrainfo" rows="8" cols="40"></textarea>
+              <br>
+        </section>
+        
+        <section class="infoframe">
+              <input type="button" value="Check Details" onClick="processRegistration();">     
+              <INPUT TYPE="reset" >
+        </section>
+              
+        <section id="verification">
+            <div id="regtest"></div>
+        </section>
+              
+        <br />
+              
+        <section id="termsconditions">
+           <h3>Hotel Terms and Conditions</h3>
+              <div id="tctext">
+                  
+<p><b>Payment/Refunds:</b></p><br/>
+<p>Due to contractual obligations, hotel registration requires reservation of two consecutive room nights, billed tax-free at the rate of $119/night for a Standard Queen and $199/night for a Deluxe Double. ECAASU will not issue any refunds after payment for the hotel room, however you may substitute in guests NO LATER than January 20th, 2013. If circumstances deem that you are unable to book two consecutive room nights, you must notify the Logistics/Admin committee at logistics-admin@ecaasu2013.org.</p><br/>
+
+<p><b>Additional Fees:</b></p><br/>
+<p>Guests arriving in groups of 8 or more will be subject to a standard hotel porterage fee of $12.96 per person, round trip. Guests on whom the hotel levies this fee are individually responsible for paying the fee. Any additional charges levied by the hotel on the room will also be the responsibility of the individual guests. If fees are not reconciled upon departure, ECAASU is obliged to automatically charge the account of the individual of concern.</p><br/>
+
+<p><b>Room Occupancies:</b></p><br/>
+<p>By law and hotel policy, the maximum occupancy of a Standard Queen is 2 persons and a Deluxe Double is 4 persons. Rooms are not to be occupied by more than the number of allowable persons. All guests in a room will be held liable if these policies are violated.</p><br/>
+
+<p><b>Room Availability:</b></p><br/>
+<p>ECAASU has contracted a limited number of room nights at the Hudson Hotel. Should registration fill up, hotel registration will remain open; however, availability is not guaranteed. The Logistics/Admin committee will notify late registrants about additional availability on a first come, first serve basis.</p><br/>
+<p>Please note that the completion of this form does NOT guarantee you a hotel room reservation or booking. Only the payment for the room will give you the booking. If a registration form is filled out but is not paid on time or before the quantity of rooms runs out, ECAASU is not liable.</p><br/>
+
+<p><b>Hotel Policies:</b></p><br/>
+<p>By agreeing to ECAASU’s Hotel Registration Terms and Conditions, registrants also agree to all of Hudson Hotel’s Terms and Conditions. Guests will be held personally liable for all violations and damages done to hotel property.</p><br/>
+
+<p>I confirm that I have read, understood and accept, the ECAASU Hotel Registration Terms and Conditions upon completion of ECAASU Hotel Registration with the Hudson Hotel. I accept that ECAASU and the Hudson Hotel has the right to ask any guest to withdraw from registration and occupancy at the Hudson without refund or explanation, if they are in breach of either ECAASU or the Hudson Hotel’s Terms & Conditions. </p><br/>
+
+              </div><br />
+                  
+          <label id ="tcagree">I have read, understood, and agree to all the above Terms and Conditions.   <input type="checkbox" onChange="displaySubmit();"></label>
+              
+        </section>
+        
+        <section id="submitarea">
+           <div id="submitbutton"></div>
+        </section>          
+              
+        </form><!--large form-->
+  </body>
+    
+</html>

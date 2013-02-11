@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>HTML</title>
+        <meta name="description" content="ECAASU 2013 Contact Form" />
+        <meta name="author" content="RochesterinNYC" />
+            <meta name='keywords' content='ecaasu, east coast, east coast asian american student union, student union, asian american,asian,asian american politics,politics, culture, community service' /> 
+        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel='stylesheet' type='text/css' href='registration.css' />
+    </head>
+
+    <body>
+        <img id="bground" src="subway/bgcity.png" alt="NYC Background"/>
+        
+        <section class = 'menu'>
+      <a id='register' href="http://www.ecaasu2013.org/registration.php" >Register Here</a>
+      <a id='goback' href="http://www.ecaasu2013.org/" >Go Back</a>
+    <div class='socialbar'>
+            <a id='twitbut' href='https://twitter.com/ecaasu'><img src='images/twitter.png' alt="Twitter Logo"/></a>
+            <a href='http://www.facebook.com/Ecaasu2013'><img src='images/facebook.png' alt="Facebook Logo"/></a>
+            <a href='http://www.tumblr.com/tagged/ecaasu'><img id='tumblr' src='images/tumblr2.png' alt="Tumblr Logo"/></a>
+            <a href='mailto:tech@ecaasu2013.org'><img src='images/email.png' alt="Email Logo"></a>
+            <script charset='utf-8' src='http://widgets.twimg.com/j/2/widget.js'></script>
+            <div id='twitter'>
+                 <script>
+                   new TWTR.Widget({
+                   version: 2,
+                   type: 'profile',
+                   rpp: 4,
+                   interval: 30000,
+                   width: 250,
+                   height: 300,
+                   theme: {
+                   shell: {
+                   background: '#5371e1',
+                   color: '#ffffff'
+                   },
+                   tweets: {
+                   background: '#75b2dd',
+                   color: '#000000',
+                   links: '#000dff'
+                   }
+                   },
+                   features: {
+                   scrollbar: false,
+                   loop: false,
+                   live: false,
+                   behavior: 'all'
+                   }
+                   }).render().setUser('ECAASU2013').start();
+                 </script>
+           </div><!--twitter-->
+      </div><!--social bar-->
+    </section><!--header-->
+        <form name="contactform" method="post" action="emailform.php">
+        <section id="contactform"> 
+        <h6><u>Contact Us</u></h6><br/>
+        <table style="width:450px">
+        <tr>
+         <td style="valign:top">
+          <label>First Name *</label>
+         </td>
+         <td style="valign:top">
+          <input  type="text" name="first" maxlength="50" size="23">
+         </td>
+        </tr>
+        <tr>
+         <td style="valign:top">
+          <label>Last Name *</label>
+         </td>
+         <td style="valign:top">
+          <input  type="text" name="last" maxlength="50" size="23">
+         </td>
+        </tr>
+        <tr>
+         <td style="valign:top">
+          <label>Your Email Address *</label>
+         </td>
+         <td style="valign:top">
+          <input  type="text" name="email" maxlength="80" size="23">
+         </td>
+        </tr>
+        <tr>
+         <td style="valign:top">
+          <label>What does your question or comment pertain to? *</label>
+         </td>
+         <td style="valign:top">
+              <select name="emailtarget">
+              <option value="Registration" selected>Registration</option>
+              <option value="Hotel or Hosting">Hotel or Hosting</option>
+              <option value="Sponsors">Sponsors</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Talent Competition">Talent Competition</option>
+              <option value="Logistics">Logistics</option>
+              <option value="Programming">Workshops/Speakers </option>
+              <option value="Other">Other</option>
+              </select>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <label>Comments/Questions *</label>
+         </td>
+         <td style="valign:top">
+          <textarea name="bodytext" maxlength="10000" cols="30" rows="15"></textarea>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2" style="text-align:center">
+          <input type="submit" value="Submit" style="position:relative;left:-17px;">
+         </td>
+        </tr>
+        </table>
+        </section>
+        </form>
+    </body>
+</html>
