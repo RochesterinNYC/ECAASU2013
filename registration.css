@@ -614,3 +614,29 @@ h6{
 	font-size: 1.2em;
 }
 
+#ecaasuupdates {
+      position:relative;
+      left:20%;
+      width:60%;
+      background-color:#5371e1;
+      opacity:0.8;
+      padding:1%;
+      margin-bottom:2%;
+      border:solid;
+}
+
+.input{
+	display: inline-block;
+	border:solid;
+	margin-right:10px;
+}
+
+h7{
+   color:white;
+   text-align:center;
+   position:relative;
+   margin-bottom:15px;
+   font-family:'helvetica', 'sans-serif';
+   font-size:150%;
+   font-weight:bold;
+}

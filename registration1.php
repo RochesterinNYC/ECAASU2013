@@ -31,7 +31,7 @@
         <img id="bground" src="subway/bgcity.png" alt="NYC Background"/>
         
         <section class = 'menu'>
-      <a id='register' href="http://www.ecaasu2013.org/registration.php" >24 Hour Flash Sale! Register Here</a>
+      <a id='register' href="http://www.ecaasu2013.org/registration.php" >Register Here</a>
       <a id='goback' href="http://www.ecaasu2013.org/" >Go Back</a>
     <div class='socialbar'>
             <a id='twitbut' href='https://twitter.com/ecaasu'><img src='images/twitter.png' alt="Twitter Logo"/></a>
@@ -75,7 +75,7 @@
         <h2>Registration</h2>
         
         <h2 style="font-size:120%;">
-        You are eligible for the Late Registration price of $85!<br/><br/>
+        You are eligible for the Super Late Registration price of $95!<br/><br/>
         If you are a current Columbia student who is planning to volunteer and/or host, please do not register at this time.<br/><br/>
         Please check the FAQ before registering: <a class="faqa" target="_blank" href="http://www.ecaasu2013.org/faq.html">FAQ</a><br/>
         If you are looking to register as a group: <a class="faqa" target="_blank" href="http://www.ecaasu2013.org/faq.html#7">Group Registration Details</a></h2>      
