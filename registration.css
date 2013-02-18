@@ -631,12 +631,52 @@ h6{
 	margin-right:10px;
 }
 
-h7{
+#appheader{
    color:white;
    text-align:center;
    position:relative;
    margin-bottom:15px;
    font-family:'helvetica', 'sans-serif';
-   font-size:150%;
+   font-size:120%;
    font-weight:bold;
+   background:#5371e1;
+   z-index:20;
+   border:solid;
+}
+
+.hiddeninput{
+   display:none;
+}
+
+.checkinbut{
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+#registranttable{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:20;
+	border: 1px solid green;
+}
+
+#registranttable th{
+	padding:7px;
+}
+
+#registranttable td{
+	padding:7px;
+}
+
+#registrantchecked {
+	display:absolute;
+	position:absolute;
+	font-size:150%;
+	margin-right:auto;
+	margin-left:auto;
+	top:50%;
+	z-index:20;
 }
