@@ -84,24 +84,20 @@
 	 $value10 = $_POST['gradyear'];
 	 $value11 = $_POST['major'];
 	 $value12 = $_POST['aagroup'];
-	 $value13 = $_POST['travelmethod'];
 	 $value15 = $hearecaasu;
 	 $value16 = $_POST['pastecaasu'];
 	 $value17 = $_POST['emergencycontact'];
 	 $value18 = $_POST['emergencyphone'];
-	 $value19 = $_POST['emergencyrelationship'];
-	 $value20 = $_POST['extrahealth'];
 	 $value21 = $_POST['extrainfo'];
 	 $value22 = $_POST['groupcode'];
 	 $value23 = $_POST['ambassador'];
 	 
 	 //Creates new entry in Registration SQL database table
 	 $sql = "INSERT INTO ecaasu_registration (time_stamp, first_name, last_name, birth_date, email_address, phone_number, gender,
-	 			  	   		    ethnicity, institution_name, grad_year, intended_major, aa_group, travel_method,
-								hear_ecaasu, num_conferences, emergency_name, emergency_phone,
-								emergency_relationship, extra_health, extra_info, group_code, campus_ambassador)
-	 	     VALUES('$value1','$value2','$value3','$value4','$value5','$value6','$value7','$value8','$value9','$value10','$value11','$value12','$value13',
-			        '$value15','$value16','$value17','$value18','$value19','$value20','$value21','$value22','$value23')";
+	 			  	   		    ethnicity, institution_name, grad_year, intended_major, aa_group, 
+								hear_ecaasu, num_conferences, emergency_name, emergency_phone,extra_info, group_code, campus_ambassador)
+	 	     VALUES('$value1','$value2','$value3','$value4','$value5','$value6','$value7','$value8','$value9','$value10','$value11','$value12',
+			        '$value15','$value16','$value17','$value18','$value21','$value22','$value23')";
 	 
 	 //Server or database connection error
 	 if (!mysql_query($sql,$con)){

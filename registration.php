@@ -445,18 +445,6 @@
         <section class="infoframe">
               
               <h3>Logistics Information</h3><br />
-                  
-              <div id="travel">
-              <label>How do you plan to travel here?</label><br>
-              <label><input type="radio" name="travelmethod" value="Train" checked>Train</label><br>
-              <label><input type="radio" name="travelmethod" value="Car">Car</label><br>
-              <label><input type="radio" name="travelmethod" value="Bus">Bus</label><br>
-              <label><input type="radio" name="travelmethod" value="Airplane">Airplane</label><br>
-              <label><input type="radio" name="travelmethod" value="Boat">Boat</label><br>
-              <label><input type="radio" name="travelmethod" value="Public Transit">Public Transit</label><br>
-              <label><input type="radio" name="travelmethod" value="Other">Other</label><br>
-              </div>
-              <br>
               
               <div id="hearecaasu">
               <label>How did you hear about ECAASU? (Can check multiple)</label><br>
@@ -506,16 +494,7 @@
               <input type = "text" name="emergencyphone"><br />
               (###) ###-#### format
               </div>
-              
-              <div id="emergencyrelationship">
-              <label>Emergency Contact Relationship:</label><br />
-              <input type="text" name="emergencyrelationship">
-              </div>
-              <br /><br />
-              
-              <label>Extra Health Information (Allergies, Disabilities, etc.):</label><br>
-              <textarea name="extrahealth" rows="8" cols="40"></textarea>
-              <br>
+              <br/><br/><br/>
         </section>
         
         <section class="infoframe">

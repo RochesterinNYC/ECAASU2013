@@ -18,12 +18,6 @@ function processRegistration(){
 		 var aaGroup = document.ecaasureg.aagroup.value;
 		 var groupCode = document.ecaasureg.groupcode.value;
 		 
-		 //Properly formats the "Travel Method" data
-		 for (var i = 0;i < document.ecaasureg.travelmethod.length; i++){
-		  	if (document.ecaasureg.travelmethod[i].checked){
-		 	    var travelMethod = document.ecaasureg.travelmethod[i].value;
-			}
-		 }
 		 //Properly formats the "How did you hear about ECAASU?" data
 		 var hearecaasu = "";
 		 var hearecaasucount = document.ecaasureg.elements['hearecaasu[]'].length;
@@ -40,9 +34,7 @@ function processRegistration(){
 		 
 		 var emergencyContact = document.ecaasureg.emergencycontact.value; 
 		 var emergencyPhone = document.ecaasureg.emergencyphone.value;
-		 var emergencyRelationship = document.ecaasureg.emergencyrelationship.value;
-		 
-		 var extraHealth = document.ecaasureg.extrahealth.value;
+
 		 var extraInfo = document.ecaasureg.extrainfo.value;
 		 
 		 //Formats and prepares the user inputted data for output validation
@@ -57,15 +49,12 @@ function processRegistration(){
 							   '<p><h4>Major: </h4>' + major + '</p><br />' +
 							   '<p><h4>Affiliated Organizations: </h4>' + aaGroup + '</p><br />' +
 							   '<p><h4>Group Code: </h4>' + groupCode + '</p><br />' ;
-		 var logisticsInfo = '<p><h4>Travel Method: </h4>' + travelMethod + '</p><br />' +
-							 '<p><h4>How did you hear about ECAASU: </h4>' + hearecaasu + '</p><br />' +
+		 var logisticsInfo = '<p><h4>How did you hear about ECAASU: </h4>' + hearecaasu + '</p><br />' +
 							 '<p><h4>How many past ECAASU conferences have you attended: </h4>' + pastecaasus + '</p><br />' +		 
 							 '<p><h4>The campus ambassador that referred you: </h4>' + ambassador + '</p><br />';	
 		 var emergencyInfo = '<p><h4>Emergency Contact: </h4>' + emergencyContact + '</p><br />' +
-		 	 			   	 '<p><h4>Emergency Contact Number: </h4>' + emergencyPhone + '</p><br />' +
-							 '<p><h4>Emergency Contact Relationship: </h4>' + emergencyRelationship + '</p><br />';
-		 var extraInfo = '<p><h4>Extra Health Information: </h4>' + extraHealth + '</p><br />' +
-		 	 		   	 '<p><h4>Extra Information: </h4>' + extraInfo + '</p><br />';						 
+		 	 			   	 '<p><h4>Emergency Contact Number: </h4>' + emergencyPhone + '</p><br />' ;
+		 var extraInfo = '<p><h4>Extra Information: </h4>' + extraInfo + '</p><br />';						 
 		
 		 //Removes the validation output area
 		 var child = document.getElementById('regtest');

@@ -6,6 +6,7 @@
 
 	<link rel='stylesheet' type='text/css' href='../registration.css' />
   </head>
+  		<img id="specbground" src="../subway/bgcity.png" alt="NYC Background"/>
   		<div id="appheader">ECAASU Check-In Application<br/>
 		Written by James Wen
 		</div>
