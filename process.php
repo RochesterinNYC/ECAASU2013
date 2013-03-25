@@ -73,20 +73,20 @@
 	 
 	 //Assigns user registration input information to variables
 	 $value1 = $timestamp;
-	 $value2 = $_POST['firstname'];
-	 $value3 = $_POST['lastname'];
+	 $value2 = str_replace("'", "", $_POST['firstname']);
+	 $value3 = str_replace("'", "", $_POST['lastname']);
 	 $value4 = $birthdate;
 	 $value5 = $_POST['emailaddress'];
 	 $value6 = $_POST['phonenumber'];
 	 $value7 = $_POST['gender'];
 	 $value8 = $_POST['ethnicity'];
-	 $value9 = $_POST['institution'];
+	 $value9 = str_replace("'", "", $_POST['institution']);
 	 $value10 = $_POST['gradyear'];
-	 $value11 = $_POST['major'];
-	 $value12 = $_POST['aagroup'];
+	 $value11 = str_replace("'", "", $_POST['major']);
+	 $value12 = str_replace("'", "", $_POST['aagroup']);
 	 $value15 = $hearecaasu;
 	 $value16 = $_POST['pastecaasu'];
-	 $value17 = $_POST['emergencycontact'];
+	 $value17 = str_replace("'", "", $_POST['emergencycontact']);
 	 $value18 = $_POST['emergencyphone'];
 	 $value21 = $_POST['extrainfo'];
 	 $value22 = $_POST['groupcode'];

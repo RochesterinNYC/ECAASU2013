@@ -62,13 +62,15 @@
 	$query .= " ORDER BY registrant_id";
 	//used for debugging:
 	//printf ($query);
-	printf ("<table id='registranttable' border='1'><tr><th>Registrant ID</th><th>First Name</th><th>Last Name</th><th>Email Address</th><th>Checked In?</th><th>Check People In</th></tr>");
+	printf ("<table id='registranttable' border='1'><tr><th>Registrant ID</th><th>First Name</th><th>Last Name</th><th>Institution</th><th>Email Address</th><th>Checked In?</th><th>Check People In</th></tr>");
 	$result = mysqli_query($con, $query);
 	while ( $row = mysqli_fetch_array($result, MYSQLI_ASSOC) ) {
-		printf ("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td><form name = 'checkin' action='checkregistrant.php' method='post'><input class='hiddeninput' type = 'text' name='registrantid' value='%s'><input class='checkinbut' type='submit' name='button' value='Check In'></form></td></tr>", $row["registrant_id"], $row["first_name"], $row["last_name"], $row["email_address"], $row["checked_in"], $row["registrant_id"]);
+		printf ("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td><form name = 'checkin' action='checkregistrant.php' method='post'><input class='hiddeninput' type = 'text' name='registrantid' value='%s'><input class='checkinbut' type='submit' name='button' value='Check In'></form></td></tr>", $row["registrant_id"], $row["first_name"], $row["last_name"], $row["institution_name"], $row["email_address"], $row["checked_in"], $row["registrant_id"]);
 	}
 	
 	printf("</table><br/><br/><br/>");
+    printf("<a id='backbutton' href='http://www.ecaasu2013.org/checkinapp/checkin.php'>Back to Search</a>");
+    
     // Escape User Input to help prevent SQL Injection
 	//$age = mysql_real_escape_string($age);
 	//$sex = mysql_real_escape_string($sex);

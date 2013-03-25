@@ -572,6 +572,10 @@ The current ECAASU has three main governing and executive bodies:<ul>
 
 	     <div id="workshopstext"> <br/>
  <p style="font-size: 130%;"><b>Session 1:</b></p><br/>
+
+ <div class="workshopbox" onmouseover="ddrivetip('Meet the founders of RentHop.com, an apartment rental startup funded by Y Combinator and recently featured in Forbes, Fast Company, and a Harvard Business School case study.  Learn how Lee Lin and Lawrence Zhou developed a vision for fixing the real estate market and turned the idea from a nights and weekends project into an explosively growing and profitable company.  Along the way, they faced major challenges, experimented with different revenue models, and carefully developed strategic partnerships.<br/><br/>In this workshop, we will dive into three crucial decision points in the company\'s history: the fundraising, the user growth, and the revenue model.  Each discussion will be presented as a case study, offering the audience several alternatives and analyzing the pros and cons of each choice.  Participation and discussion is strongly encouraged but not required.  Attendees from all backgrounds are welcome.', '#EFEFEF', 800);"
+ onMouseout="hideddrivetip()"><b>Entrepreneurship Case Study: <a href="http://www.renthop.com">RentHop.com</a> on Battling Craigslist and Monetizing Online Economies</b> - Lee Lin and Lawrence (Li) Zhou (Co-Founders) & Lei Lei and Vivian Li (Business Development & Marketing)</div>
+
  <div class="workshopbox" onmouseover="ddrivetip('A workshop exploring the use of stories to disrupt stereotypes of Asian Americans and write our own narratives. Connected to the upcoming social justice website project As[I]Am, this workshop is an opportunity to learn about ourselves in context and re-write the dominant stories in our own words.', '#EFEFEF', 800);"
  onMouseout="hideddrivetip()"><b>As[I]Am</b> - Jordan Alam</div>
 
@@ -1504,14 +1508,21 @@ Initiative-Specific Opportunities
 <!--Featured--> 
 
 <div class="frame" id="frame58"> 
-<h2>Featured ECAASU Sponsors</h2> 
-<div class="contentframenomenu"> 
-
-<div class="sponsorsubframe"> 
-<img class="sponsorimage" src="sponsors/sponsors.png" alt="Sponsor Image"/><br/><br/>
-
-</div>
-</div>
+<h2>Featured ECAASU Sponsors and Donors</h2> 
+     <ul id="sponsordonormenu"> 
+        <li><a onmouseover="document.getElementById('sponsors').setAttribute('style','left:-9999999px;');document.getElementById('donors').setAttribute('style','left:-9999999px;');document.getElementById('sponsors').setAttribute('style','left:0px;');">Sponsors</a> </li>
+        <li><a onmouseover="document.getElementById('sponsors').setAttribute('style','left:-9999999px;');document.getElementById('donors').setAttribute('style','left:-9999999px;');document.getElementById('donors').setAttribute('style','left:0px;');">Donors</a> </li>
+        </ul>  
+    <div class="contentframe"> 
+             <div class="sponsorsubframe" id="sponsors"> 
+                <img class="sponsorimage" src="sponsors/sponsors.png" alt="Sponsor Image"/><br/><br/>
+            </div>
+            <div class="sponsorsubframe" id="donors"> 
+                <img class="sponsorimage" src="sponsors/donors.png" alt="Donor Image"/><br/><br/>
+            </div>
+        </div>
+    
+    </div>
 </div> 
 <!--Vertical Line--> 
 

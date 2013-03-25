@@ -1,4 +1,4 @@
-missio/* Default CSS */
+/* Default CSS */
 /*------------------------------------* RESET *------------------------------------*/ 
 body,  div,  dl,  dt,  dd,  ul,  ol,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  form,  fieldset,  input,  textarea,  p,  blockquote,  th,  td  {
 	 margin:0;
@@ -2953,3 +2953,48 @@ h1{
 	 top:9%;
 	 overflow:auto;
 }
+
+#donors{
+	left:-9999999px;
+}
+
+#sponsordonormenu  {
+	 position:absolute;
+	 top:12%;
+	 font-size:90%;
+	 list-style:none;
+	 font-weight:bold;
+	 z-index:3;
+	 width:160px;
+	 left:50%;
+	 margin: 0 0 0 -80px;
+}
+
+#sponsordonormenu li  {
+	 float:left;
+	 margin-right:1%;
+	 position:relative;
+	 list-style:none;
+
+}
+
+#sponsordonormenu a  {
+	 background:#5371e1;
+	 display:block;
+	 padding:7px;
+	 padding-right:8px;
+	 padding-left:8px;
+	 color:#fff;
+	 font-family: "Helvetica",  "sans-serif";
+	 text-decoration:none;
+	 /* Firefox v1.0+ */ -moz-border-radius:10px ;
+	 /* Safari v3.0+ and by Chrome v0.2+ */ -webkit-border-radius:10px ;
+	 /* Firefox v4.0+ ,  Safari v5.0+ ,  Chrome v4.0+ ,  Opera v10.5+ and by IE v9.0+ */ border-radius:10px ;
+}
+
+#sponsordonormenu  a:hover  {
+	 color:#fff;
+	 background:#333;
+}
+
+
