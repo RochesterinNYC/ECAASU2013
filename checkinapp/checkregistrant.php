@@ -20,21 +20,30 @@
 	    printf("Connect failed: %s\n", mysqli_connect_error());
 	    exit();
 	 }
-	 
+
+     //Registrant ID is unique identifier for singular registrant
 	 $registrantID = $_POST['registrantid'];
-	 //Gets current timestamp information (EST)
+     
+     //Gets current timestamp information (EST)
 	 date_default_timezone_set('America/New_York');
 	 $timestamp = new DateTime("now", new DateTimeZone('America/New_York'));
 	 $timestamp = $timestamp->format('Y-m-d H:i:s');
-
-	$sql = "UPDATE ecaasu_registration
+     
+     //Query to check-in registrant
+	 $sql = "UPDATE ecaasu_registration
 			SET checked_in='Yes', checkin_time='$timestamp'
-			WHERE registrant_id = '$registrantID'";		 
-	//Server or database connection error
+            WHERE registrant_id = '$registrantID'";		
+
+	 //Server or database connection error
 	 if (!mysqli_query($con, $sql)){
   	 	die('Error: ' . mysql_error());
-  	 }
-	 printf ("<div id='registrantchecked'>Registrant was checked in! You will be returned to the search app in a second.</div>");
+     }
+
+     //Confirmation message of registrant check-in
+     printf ("<div id='registrantchecked'>Registrant was checked in! You will be returned to the search app in a second.</div>");
+
+     //One second before redirect back to search page
+     //All volunteers instructed about this in handout
 	 header("Refresh: 1;url=http://www.ecaasu2013.org/checkinapp/checkin.php");
 
 ?> 

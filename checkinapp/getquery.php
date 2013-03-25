@@ -21,7 +21,7 @@
 	    exit();
 	 }
 
-	 // Retrieve data from Query String
+	// Retrieve data from Query String
 	$registrationID = $_POST['registrantid'];
 	if($registrationID != "Registrant ID"){
 		$registrationID = intval($registrationID);
@@ -30,9 +30,14 @@
 	$lastName = $_POST['lastname'];
 	$emailAddress = $_POST['emailaddress']; 
 
+    //Starts writing SQL query
 	$query = "SELECT * FROM ecaasu_registration";
 	$WHEREwritten = 0;//0 is false, 1 is true
-	function writeStart(){
+    
+    //Function that writes the SQL operators from in between pieces of info to query
+    //Writes WHERE if it is start of query (right after SELECT * FROM etc.)
+    //Writes AND if it is adding on extra pieces of information to query
+    function writeStart(){
 		global $query;
 		global $WHEREwritten;
 		if ($WHEREwritten == 0){
@@ -42,7 +47,9 @@
 		else if($WHEREwritten == 1)	{
 			$query .= " AND";
 		}
-	}
+    }
+
+    //Adds info to query depending on whether search query included it in search
 	if(is_numeric($registrationID)){
 		writeStart();
 		$query .= " registrant_id=$registrationID";
@@ -59,26 +66,20 @@
 		writeStart();
 		$query .= " email_address='$emailAddress'";
 	}
-	$query .= " ORDER BY registrant_id";
-	//used for debugging:
-	//printf ($query);
+    //Orders output by registrant ID (ascending)
+    $query .= " ORDER BY registrant_id";
+	
+    //Writes the actual table with registrants that match search parameters
+    //Each registrant has ID, first name, last name, institution, email address,
+    //whether or not they are checked in, and a personal check in button listed
 	printf ("<table id='registranttable' border='1'><tr><th>Registrant ID</th><th>First Name</th><th>Last Name</th><th>Institution</th><th>Email Address</th><th>Checked In?</th><th>Check People In</th></tr>");
 	$result = mysqli_query($con, $query);
 	while ( $row = mysqli_fetch_array($result, MYSQLI_ASSOC) ) {
 		printf ("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td><form name = 'checkin' action='checkregistrant.php' method='post'><input class='hiddeninput' type = 'text' name='registrantid' value='%s'><input class='checkinbut' type='submit' name='button' value='Check In'></form></td></tr>", $row["registrant_id"], $row["first_name"], $row["last_name"], $row["institution_name"], $row["email_address"], $row["checked_in"], $row["registrant_id"]);
 	}
-	
 	printf("</table><br/><br/><br/>");
+
+    //Back to Search button
     printf("<a id='backbutton' href='http://www.ecaasu2013.org/checkinapp/checkin.php'>Back to Search</a>");
     
-    // Escape User Input to help prevent SQL Injection
-	//$age = mysql_real_escape_string($age);
-	//$sex = mysql_real_escape_string($sex);
-	//$wpm = mysql_real_escape_string($wpm);
-	//build query
-	
-
-	//Execute query
-	//$queryResult = mysql_query($query) or die(mysql_error());	
-
 ?> 
