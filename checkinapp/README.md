@@ -6,7 +6,6 @@ In practice, the check-in process for each registrant with this application take
 Group check-in (of multiple people) is not allowed or implemented as registrants are required to individually present photo IDs while checking in.
 
 Three pages in user (volunteer) flow:
-
 http://www.ecaasu2013.org/checkinapp/checkin.php
 http://www.ecaasu2013.org/checkinapp/getquery.php
 http://www.ecaasu2013.org/checkinapp/checkregistrant.php
